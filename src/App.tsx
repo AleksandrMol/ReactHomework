@@ -6,6 +6,8 @@ import { Header } from "./Header";
 import { Content } from "./Content";
 import { CardList } from "./CardList";
 import { Card } from "./CardList/Card";
+import { Dropdown } from "./Dropdown";
+import { CardMenu } from "./CardList/Card/CardMenu";
 
 function AppComponent () {
     return(
@@ -13,7 +15,7 @@ function AppComponent () {
             <Header />
             <Content >
                 <CardList/>
-            </Content>
+            </Content>            
         </Layout>
     );
 }

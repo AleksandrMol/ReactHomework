@@ -1,0 +1,18 @@
+.dropdownListItem{
+    padding: 10px 20px;
+
+    color: #999;
+}
+.dropdownListItem:not(:last-child){
+    border-bottom: 1px solid #ECECEC;
+}
+.dropdownListItem:hover{
+    background-color: #ECECEC;
+}
+.icon{
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    background-color: #333333;
+}

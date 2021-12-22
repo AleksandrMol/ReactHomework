@@ -6,6 +6,7 @@ export function CardList() {
   return (
     <ul className = {styles.cardsList}>
       <Card/>
+      <Card/>
     </ul>
   );
 }

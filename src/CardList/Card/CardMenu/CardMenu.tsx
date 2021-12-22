@@ -1,16 +1,22 @@
 import React from 'react';
 import styles from './cardmenu.css';
+import { MenuIcon } from './MenuIcon';
+import { Dropdown } from '../../../Dropdown';
+import { DropdownItem } from './DropdownItem';
 
 export function CardMenu() {
   return (
     <div className = {styles.menu}>
-      <button className = {styles.menuButton}>
-        <svg width="5" height="20" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="2.5" cy="2.5" r="2.5" fill="#D9D9D9"/>
-          <circle cx="2.5" cy="10" r="2.5" fill="#D9D9D9"/>
-          <circle cx="2.5" cy="17.5" r="2.5" fill="#D9D9D9"/>
-        </svg>
-      </button>
+      <Dropdown onClose={() => console.log('closed')} onOpen={() => console.log('opened')} button = {<MenuIcon/>}>
+          <ul className = {styles.dropdown}>
+            <DropdownItem text = {'Комментарии'}/>
+            <DropdownItem text = {'Поделиться'}/>
+            <DropdownItem text = {'Скрыть'}/>
+            <DropdownItem text = {'Сохранить'}/>
+            <DropdownItem text = {'Пожаловаться'}/>
+            <DropdownItem text = {'Закрыть'}/>
+          </ul>
+      </Dropdown>
     </div>
   );
 }
