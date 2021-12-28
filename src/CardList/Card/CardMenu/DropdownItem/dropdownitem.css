@@ -1,18 +1,27 @@
 .dropdownListItem{
+    display: flex;
+    align-items: center;
+    height: 37px;
     padding: 10px 20px;
 
     color: #999;
+    line-height: 16px;
+    white-space: nowrap;
 }
 .dropdownListItem:not(:last-child){
     border-bottom: 1px solid #ECECEC;
+}
+.dropdownListItem:last-child{
+    color: #666;
+
+    background-color: #D9D9D9;
 }
 .dropdownListItem:hover{
     background-color: #ECECEC;
 }
 .icon{
+    display: inline-block;
     width: 15px;
     height: 15px;
-
-    border-radius: 50%;
-    background-color: #333333;
+    margin-right: 5px;
 }
