@@ -8,6 +8,8 @@ import { CardList } from "./CardList";
 import { Card } from "./CardList/Card";
 import { Dropdown } from "./Dropdown";
 import { CardMenu } from "./CardList/Card/CardMenu";
+import { Icon } from "./icons/Icon";
+import { ComIcon } from "./icons";
 
 function AppComponent () {
     return(
@@ -15,6 +17,7 @@ function AppComponent () {
             <Header />
             <Content >
                 <CardList/>
+                {/* <Icon size = {20} children = {<ComIcon/>}/> */}
             </Content>            
         </Layout>
     );
